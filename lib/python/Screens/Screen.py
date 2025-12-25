@@ -236,7 +236,7 @@ class Screen(dict):
 	def screenContentChanged(self):
 		for f in self.onContentChanged:
 			if not isinstance(f, type(self.close)):
-				exec(f, globals(), locals())
+				exec(f, globals(), locals())  # Python 3
 			else:
 				f()
 
@@ -288,7 +288,8 @@ class Screen(dict):
 			self["Image"].setPixmap(LoadPixmap(self.screenImage))
 		for f in self.onLayoutFinish:
 			if not isinstance(f, type(self.close)):
-				exec(f, globals(), locals())
+				# exec f in globals(), locals()  # Python 2
+				exec(f, globals(), locals())  # Python 3
 			else:
 				f()
 		for key in self:  # nudge TemplatedMultiContent so receives self.scale set above

@@ -22,7 +22,7 @@ class hotkey:
 	hotkeys = [(_("Red") + " " + _("long"), "red_long", ""),
 		(_("Green") + " " + _("long"), "green_long", ""),
 		(_("Yellow") + " " + _("long"), "yellow_long", "Plugins/Extensions/GraphMultiEPG/1"),
-		(_("Blue") + " " + _("long"), "blue_long", "SoftcamSetup"),
+		(_("Blue") + " " + _("long"), "blue_long", "Plugins/Extensions/tvManager/1"),
 		("F1/LAN", "f1", ""),
 		("F1" + " " + _("long"), "f1_long", ""),
 		("F2", "f2", ""),
@@ -31,8 +31,8 @@ class hotkey:
 		("F3" + " " + _("long"), "f3_long", ""),
 		("F4", "f4", ""),
 		("F4" + " " + _("long"), "f4_long", ""),
-		(_("Red"), "red", ""),
-		(_("Green"), "green", ""),
+		(_("Red"), "red", "Module/Screens.About/MemoryInfo"),
+		(_("Green"), "green", "Module/Screens.PluginBrowser/PluginBrowser"),
 		(_("Yellow"), "yellow", ""),
 		(_("Blue"), "blue", ""),
 		("Rec", "rec", ""),
@@ -673,7 +673,7 @@ class InfoBarHotkey:
 					return 0
 			elif selected[0] == "Module":
 				try:
-					exec("from %s import %s" % (selected[1], selected[2]), globals())
+					exec("from %s import %s" % (selected[1], selected[2]))
 					exec("self.session.open(%s)" % ",".join(selected[2:]))
 				except Exception as e:
 					print("[Hotkey] error during executing module %s, screen %s, %s" % (selected[1], selected[2], e))
@@ -719,10 +719,10 @@ class InfoBarHotkey:
 				if os.path.isfile(command):
 					if ".hidden." in command:
 						from enigma import eConsoleAppContainer
-						eConsoleAppContainer().execute("python3 %s" % command)
+						eConsoleAppContainer().execute("python %s" % command)
 					else:
 						from Screens.Console import Console
-						self.session.open(Console, selected[1] + " pythonscript", "python3 %s" % command, closeOnSuccess=selected[1].startswith('!'), showStartStopText=False)
+						self.session.open(Console, selected[1] + " pythonscript", "python %s" % command, closeOnSuccess=selected[1].startswith('!'), showStartStopText=False)
 			elif selected[0] == "Menu":
 				from Screens.Menu import MainMenu, mdom
 				root = mdom.getroot()

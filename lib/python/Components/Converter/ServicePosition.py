@@ -168,13 +168,38 @@ class ServicePosition(Poll, Converter):
 	text = property(getText)
 	value = property(getValue)
 
-	def changed(self, what):
-		cutlist_refresh = what[0] != self.CHANGED_SPECIFIC or what[1] in (iPlayableService.evCuesheetChanged,)
-		time_refresh = what[0] == self.CHANGED_POLL or what[0] == self.CHANGED_SPECIFIC and what[1] in (iPlayableService.evCuesheetChanged,)
+    def changed(self, what):
+        cutlist_refresh = what[0] != self.CHANGED_SPECIFIC or what[1] in (iPlayableService.evCuesheetChanged,)
+        time_refresh = what[0] == self.CHANGED_POLL or (what[0] == self.CHANGED_SPECIFIC and what[1] in (iPlayableService.evCuesheetChanged,))
+        
+        # Notify all downstream elements about cutlist changes
+        if cutlist_refresh:
+            self.notify_downstream("cutlist_changed")
+        
+        # Handle time updates
+        if time_refresh:
+            self.notify_downstream("changed", what)
 
-		if cutlist_refresh:
-			if self.type == self.TYPE_GAUGE:
-				self.downstream_elements.cutlist_changed()
-
-		if time_refresh:
-			self.downstream_elements.changed(what)
+    def notify_downstream(self, method_name, *args):
+        """Universal downstream notification handler"""
+        if not self.downstream_elements:
+            return
+            
+        elements = [self.downstream_elements] if not isinstance(self.downstream_elements, (list, tuple)) else self.downstream_elements
+            
+        for elem in elements:
+            if not elem:
+                continue
+                
+            # Skip if element doesn't support this notification
+            if not hasattr(elem, method_name):
+                continue
+                
+            try:
+                method = getattr(elem, method_name)
+                if callable(method):
+                    method(*args)
+            except Exception as e:
+                print(f"[ServicePosition] Error in {method_name}: {str(e)}")
+                import traceback
+                traceback.print_exc()

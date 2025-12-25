@@ -1,11 +1,15 @@
-import os
-import netifaces as ni
+# -*- coding: utf-8 -*-
+
+from os.path import isfile
 from re import sub, compile as re_compile
 from struct import pack
 from socket import inet_ntoa
 from Components.Console import Console
 from Components.PluginComponent import plugins
 from Plugins.Plugin import PluginDescriptor
+from Components.config import config
+import netifaces as ni
+import os
 
 
 class Network:
@@ -71,7 +75,7 @@ class Network:
 			if data['up'] and iface not in self.configuredInterfaces:
 				self.configuredInterfaces.append(iface)
 			nit = ni.ifaddresses(iface)
-			data['ip'] = self.convertIP(nit[ni.AF_INET][0]['addr'])  # ipv4
+			data['ip'] = self.convertIP(nit[ni.AF_INET][0]['addr'])	 # ipv4
 			data['netmask'] = self.convertIP(nit[ni.AF_INET][0]['netmask'])
 			data['bcast'] = self.convertIP(nit[ni.AF_INET][0]['broadcast'])
 			data['mac'] = nit[ni.AF_LINK][0]['addr']  # mac
@@ -99,7 +103,7 @@ class Network:
 					self.configuredInterfaces.append(ifacename)
 				if iface['dhcp']:
 					fp.write("iface " + ifacename + " inet dhcp\n")
-					fp.write("udhcpc_opts -S -T6 -t10\n")
+					fp.write("udhcpc_opts -T1 -t9\n")
 				if not iface['dhcp']:
 					fp.write("iface " + ifacename + " inet static\n")
 					if 'ip' in iface:
@@ -121,6 +125,24 @@ class Network:
 					fp.write("\n")
 				fp.write("\n")
 		self.configuredNetworkAdapters = self.configuredInterfaces
+		self.writeNameserverConfig()
+
+	def writeNameserverConfig(self):
+		try:
+			if config.usage.dns.value.lower() in ("dhcp-router", "staticip"):
+				fp = open('/etc/resolv.conf', 'w')
+				for nameserver in self.nameservers:
+					fp.write("nameserver %d.%d.%d.%d\n" % tuple(nameserver))
+				fp.close()
+				if isfile("/etc/enigma2/nameservers"):
+					Console().ePopen('rm /etc/enigma2/nameservers')
+			else:
+				fp = open('/etc/enigma2/nameservers', 'w')
+				for nameserver in self.nameservers:
+					fp.write("nameserver %d.%d.%d.%d\n" % tuple(nameserver))
+				fp.close()
+		except:
+			print("[Network]")
 
 	def loadNetworkConfig(self, iface, callback=None):
 		interfaces = []
@@ -137,7 +159,7 @@ class Network:
 			split = i.strip().split(' ')
 			if split[0] == "iface":
 				currif = split[1]
-			if currif == iface:  # read information only for available interfaces
+			if currif == iface:	 # read information only for available interfaces
 				if currif not in ifaces:
 					ifaces[currif] = {}
 					if len(split) == 4 and split[3] == "dhcp":
@@ -185,7 +207,7 @@ class Network:
 			safe_ifaces = self.ifaces.copy()
 			for intf in safe_ifaces:
 				if 'preup' in safe_ifaces[intf] and safe_ifaces[intf]['preup']:
-					safe_ifaces[intf]['preup'] = sub(' -k "\S*" ', ' -k ********* ', safe_ifaces[intf]['preup'])
+					safe_ifaces[intf]['preup'] = sub(r' -k "\S*" ', ' -k ********* ', safe_ifaces[intf]['preup'])
 			print("[Network] self.ifaces after loading: ", safe_ifaces)
 			self.config_ready = True
 			self.msgPlugins()
@@ -200,7 +222,7 @@ class Network:
 		except (ValueError, IOError) as er:
 			print("[Network.py] resolv.conf - opening failed", er)
 		else:
-			ipRegexp = "[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}"
+			ipRegexp = r"[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}"
 			nameserverPattern = re_compile("nameserver +" + ipRegexp)
 			ipPattern = re_compile(ipRegexp)
 			for line in resolv:
@@ -226,7 +248,7 @@ class Network:
 		if x in self.friendlyNames.keys():
 			return self.friendlyNames.get(x, x)
 		self.friendlyNames[x] = self.getFriendlyAdapterNaming(x)
-		return self.friendlyNames.get(x, x)  # when we have no friendly name, use adapter name
+		return self.friendlyNames.get(x, x)	 # when we have no friendly name, use adapter name
 
 	def getFriendlyAdapterNaming(self, iface):
 		name = None

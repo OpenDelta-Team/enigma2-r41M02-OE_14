@@ -23,7 +23,7 @@ import os
 
 config.misc.firstrun = ConfigBoolean(default=True)
 config.misc.languageselected = ConfigBoolean(default=True)
-config.misc.do_overscanwizard = ConfigBoolean(default=OverscanWizard and config.skin.primary_skin.value == "PLi-FullNightHD/skin.xml")
+config.misc.do_overscanwizard = ConfigBoolean(default=OverscanWizard and config.skin.primary_skin.value == "Aglare-FHD-PLI/skin.xml")
 
 
 class StartWizard(WizardLanguage, Rc):
@@ -145,6 +145,7 @@ class AutoInstallWizard(Screen):
 				raise Exception("failed to execute command!")
 				self.appClosed(True)
 		except Exception as e:
+			print(e)
 			self.appClosed(True)
 
 	def dataAvail(self, data):
@@ -192,7 +193,6 @@ class IncorrectBoxInfoWizard(MessageBox):
 
 
 if not os.path.isfile("/etc/installed"):
-	from Components.Console import Console
 	Console().ePopen("opkg list_installed | cut -d ' ' -f 1 > /etc/installed;chmod 444 /etc/installed")
 
 wizardManager.registerWizard(IncorrectBoxInfoWizard, not BoxInfo.getItem("checksum"), priority=0)

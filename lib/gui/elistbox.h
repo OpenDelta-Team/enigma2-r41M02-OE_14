@@ -158,7 +158,7 @@ public:
 	void setItemWidth(int w);
 	void setSelectionEnable(int en);
 
-	void setBackgroundColor(const gRGB &col);
+	void setBackgroundColor(gRGB &col);
 	void setBackgroundColorSelected(gRGB &col);
 	void setForegroundColor(gRGB &col);
 	void setForegroundColorSelected(gRGB &col);

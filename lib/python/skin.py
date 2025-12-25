@@ -12,7 +12,7 @@ from Tools.Directories import SCOPE_CURRENT_LCDSKIN, SCOPE_CURRENT_SKIN, SCOPE_F
 from Tools.Import import my_import
 from Tools.LoadPixmap import LoadPixmap
 
-DEFAULT_SKIN = BoxInfo.getItem("HasFullHDSkinSupport") and "E2-DarkOS/skin.xml" or "PLi-HD/skin.xml"  # SD hardware is no longer supported by the default skin.
+DEFAULT_SKIN = BoxInfo.getItem("HasFullHDSkinSupport") and "Aglare-FHD-PLI/skin.xml" or "PLi-HD/skin.xml"  # SD hardware is no longer supported by the default skin.
 EMERGENCY_SKIN = "skin_default/skin.xml"
 EMERGENCY_NAME = "Stone II"
 DEFAULT_DISPLAY_SKIN = "skin_default/skin_display.xml"
@@ -32,7 +32,9 @@ colors = {  # Dictionary of skin color names.
 	"key_text": gRGB(0x00ffffff),
 	"key_yellow": gRGB(0x00a08500)
 }
-BodyFont = ("Regular", 20, 24, 18) # font which is used when a font alias definition is missing from the "fonts" dict.
+
+
+BodyFont = ("Regular", 20, 24, 18)  # font which is used when a font alias definition is missing from the "fonts" dict.
 fonts = {  # Dictionary of predefined and skin defined font aliases.
 	"Body": BodyFont
 }
@@ -94,8 +96,9 @@ def InitSkins():
 	for skin, name in [(config.skin.primary_skin.value, "current"), (DEFAULT_SKIN, "default")]:
 		if skin in result:  # Don't try to add a skin that has already failed.
 			continue
-		if loadSkin(skin, scope=SCOPE_CURRENT_SKIN, desktop=getDesktop(GUI_SKIN_ID), screenID=GUI_SKIN_ID):
-			currentPrimarySkin = skin
+		config.skin.primary_skin.value = skin
+		if loadSkin(config.skin.primary_skin.value, scope=SCOPE_CURRENT_SKIN, desktop=getDesktop(GUI_SKIN_ID), screenID=GUI_SKIN_ID):
+			currentPrimarySkin = config.skin.primary_skin.value
 			break
 		print("[Skin] Error: Adding %s GUI skin '%s' has failed!" % (name, config.skin.primary_skin.value))
 		result.append(skin)
@@ -180,6 +183,7 @@ def loadSkin(filename, scope=SCOPE_SKIN, desktop=getDesktop(GUI_SKIN_ID), screen
 def reloadSkins():
 	global domScreens, colors, fonts, menus, menuicons, parameters, screens, setups, switchPixmap
 	domScreens.clear()
+
 	colors.clear()
 	colors = {
 		"key_back": gRGB(0x00313131),
@@ -319,6 +323,7 @@ def parseValuePair(s, scale, object=None, desktop=None, size=None):
 def parsePosition(s, scale, object=None, desktop=None, size=None):
 	return ePoint(*parseValuePair(s, scale, object, desktop, size))
 
+
 def parseRadius(value):
 	data = [x.strip() for x in value.split(";")]
 	if len(data) == 2:
@@ -339,6 +344,7 @@ def parseRadius(value):
 		return int(data[0]), edgeValue
 	else:
 		return int(data[0]), eWidget.RADIUS_ALL
+
 
 def parseSize(s, scale, object=None, desktop=None):
 	return eSize(*[max(0, x) for x in parseValuePair(s, scale, object, desktop)])
@@ -405,7 +411,6 @@ def parseParameter(s):
 
 
 def parseScale(s):
-	orig = s
 	try:
 		val = int(s)
 	except ValueError:
@@ -515,20 +520,20 @@ class AttributeParser:
 
 # OpenPLi is missing the C++ code to support this animation method.
 #
-# 	def animationMode(self, value):
-# 		try:
-# 			self.guiObject.setAnimationMode({
-# 				"disable": 0x00,
-# 				"off": 0x00,
-# 				"offshow": 0x10,
-# 				"offhide": 0x01,
-# 				"onshow": 0x01,
-# 				"onhide": 0x10,
-# 				"disable_onshow": 0x10,
-# 				"disable_onhide": 0x01
-# 			}[value])
-# 		except KeyError:
-# 			print("[Skin] Error: Invalid animationMode '%s'!  Must be one of 'disable', 'off', 'offshow', 'offhide', 'onshow' or 'onhide'." % value)
+#   def animationMode(self, value):
+#       try:
+#           self.guiObject.setAnimationMode({
+#               "disable": 0x00,
+#               "off": 0x00,
+#               "offshow": 0x10,
+#               "offhide": 0x01,
+#               "onshow": 0x01,
+#               "onhide": 0x10,
+#               "disable_onshow": 0x10,
+#               "disable_onhide": 0x01
+#           }[value])
+#       except KeyError:
+#           print("[Skin] Error: Invalid animationMode '%s'!  Must be one of 'disable', 'off', 'offshow', 'offhide', 'onshow' or 'onhide'." % value)
 
 	def title(self, value):
 		self.guiObject.setTitle(_(value))
@@ -541,7 +546,7 @@ class AttributeParser:
 
 	def secondfont(self, value):
 		self.guiObject.setSecondFont(parseFont(value, self.scaleTuple))
-		
+
 	def widgetBorderColor(self, value):
 		self.guiObject.setWidgetBorderColor(parseColor(value))
 
@@ -566,7 +571,7 @@ class AttributeParser:
 		self.guiObject.setItemCornerRadiusSelected(radius, edgeValue)
 
 	def pixmap(self, value):
-		if value.endswith(".svg"): # if graphic is svg force alphatest to "blend"
+		if value.endswith(".svg"):  # if graphic is svg force alphatest to "blend"
 			self.guiObject.setAlphatest(BT_ALPHABLEND)
 		self.guiObject.setPixmap(loadPixmap(value, self.desktop, self.guiObject.size().width(), self.guiObject.size().height()))
 
@@ -926,7 +931,7 @@ def loadSingleSkinData(desktop, screenID, domSkin, pathSkin, scope=SCOPE_CURRENT
 		if isfile(fallbackFont):
 			addFont(fallbackFont, "Fallback", 100, -1, 0)
 		# else:  # As this is optional don't raise an error.
-		# 	raise SkinError("Fallback font '%s' not found" % fallbackFont)
+		#   raise SkinError("Fallback font '%s' not found" % fallbackFont)
 		for alias in tag.findall("alias"):
 			try:
 				name = alias.attrib.get("name")
@@ -1268,7 +1273,6 @@ def readSkin(screen, skin, names, desktop):
 					break  # Otherwise, use the source.
 			if source is None:
 				raise SkinError("The source '%s' was not found in screen '%s'" % (wsource, name))
-
 			wrender = widget.attrib.get("render")
 			if not wrender:
 				if wsource:
@@ -1304,7 +1308,7 @@ def readSkin(screen, skin, names, desktop):
 			renderer = rendererClass()  # Instantiate renderer.
 			if source:
 				renderer.connect(source)  # Connect to source.
-				renderer.label_name = wsource or wname #allows that it can be checked a label exists in the skin
+				renderer.label_name = wsource or wname  # allows that it can be checked a label exists in the skin
 			attributes = renderer.skinAttributes = []
 			collectAttributes(attributes, widget, context, skinPath, ignore=("render", "source"))
 			screen.renderer.append(renderer)
@@ -1325,8 +1329,8 @@ def readSkin(screen, skin, names, desktop):
 
 			usedComponents.add(wclassname)
 
-			screen[wclassname] = addonClass() #init the addon
-			screen[wclassname].connectRelatedElement(wconnection, screen) #connect it to related ellement
+			screen[wclassname] = addonClass()  # init the addon
+			screen[wclassname].connectRelatedElement(wconnection, screen)  # connect it to related ellement
 			attributes = screen[wclassname].skinAttributes = []
 			collectAttributes(attributes, widget, context, skinPath, ignore=("addon",))
 
@@ -1461,7 +1465,7 @@ def getSkinFactor():
 	"""
 	skinfactor = getDesktop(GUI_SKIN_ID).size().height() / 720.0
 	# if skinfactor not in [0.8, 1, 1.5, 3, 6]:
-	# 	print("[Skin] Warning: Unexpected result for getSkinFactor '%0.4f'!" % skinfactor)
+	#   print("[Skin] Warning: Unexpected result for getSkinFactor '%0.4f'!" % skinfactor)
 	return skinfactor
 
 

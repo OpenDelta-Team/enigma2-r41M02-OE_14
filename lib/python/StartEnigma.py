@@ -1,4 +1,3 @@
-import sys
 import os
 from Tools.Profile import profile, profile_final
 profile("PYTHON_START")
@@ -9,6 +8,7 @@ import Tools.RedirectOutput
 import enigma
 import eConsoleImpl
 import eBaseImpl
+
 enigma.eTimer = eBaseImpl.eTimer
 enigma.eSocketNotifier = eBaseImpl.eSocketNotifier
 enigma.eConsoleAppContainer = eConsoleImpl.eConsoleAppContainer
@@ -26,11 +26,10 @@ Tools.Geolocation.InitGeolocation()
 profile("SimpleSummary")
 from Screens import InfoBar
 from Screens.SimpleSummary import SimpleSummary
-
 from sys import stdout
 
 profile("Bouquets")
-from Components.config import config, configfile, ConfigText, ConfigYesNo, ConfigInteger, ConfigSelection, NoSave
+from Components.config import config, configfile, ConfigText, ConfigYesNo, ConfigInteger, ConfigSelection, NoSave, ConfigDirectory
 config.misc.load_unlinked_userbouquets = ConfigSelection(default="1", choices=[("0", _("Off")), ("1", _("Top")), ("2", _("Bottom"))])
 if config.misc.load_unlinked_userbouquets.value.lower() in ("true", "false"):
 	config.misc.load_unlinked_userbouquets.value = "1" if config.misc.load_unlinked_userbouquets.value.lower() == "true" else "0"
@@ -56,6 +55,28 @@ profile("LOAD:Tools")
 from Tools.Directories import InitFallbackFiles, resolveFilename, SCOPE_PLUGINS, SCOPE_CURRENT_SKIN
 InitFallbackFiles()
 
+# lulu
+def getMountPoints():
+	mount_points = []
+	with open('/proc/mounts', 'r') as mounts:
+		for line in mounts:
+			parts = line.split()
+			mount_point = parts[1]
+			if os.path.ismount(mount_point):
+				mount_points.append(mount_point)
+	return mount_points
+
+
+mount_points = getMountPoints()
+mount_point = None
+for mp in mount_points:
+	epg_path = os.path.join(mp, 'epg.dat')
+	if os.path.exists(epg_path):
+		mount_point = epg_path
+		break
+
+mount_point = mount_point or '/hdd/epg.dat'
+# lulu
 profile("config.misc")
 config.misc.radiopic = ConfigText(default=resolveFilename(SCOPE_CURRENT_SKIN, "radio.mvi"))
 config.misc.blackradiopic = ConfigText(default=resolveFilename(SCOPE_CURRENT_SKIN, "black.mvi"))
@@ -67,25 +88,43 @@ config.misc.prev_wakeup_time = ConfigInteger(default=0)
 #config.misc.prev_wakeup_time_type is only valid when wakeup_time is not 0
 config.misc.prev_wakeup_time_type = ConfigInteger(default=0)
 # 0 = RecordTimer, 1 = ZapTimer, 2 = Plugins, 3 = WakeupTimer
-config.misc.epgcache_filename = ConfigText(default="/media/hdd/epg.dat", fixed_size=False)
+# config.misc.prev_wakeup_time_type is only valid when wakeup_time is not 0
+config.misc.prev_wakeup_time_type = ConfigInteger(default=0)
+# 0 = RecordTimer, 1 = ZapTimer, 2 = Plugins, 3 = WakeupTimer
+# lulu
+config.misc.epgcache_filename = ConfigDirectory(mount_point)
+# config.misc.epgcache_filename = ConfigText(default="/media/hdd/epg.dat", fixed_size=False)
 
+config.misc.pluginstyle = ConfigSelection(default="New Style 2", choices=[
+	("normallstyle", _("New Style 5")),
+	("newstyle1", _("New Style 1")),
+	("newstyle2", _("New Style 2")),
+	("newstyle3", _("New Style 3")),
+	("newstyle4", _("New Style 4")),
+	("newstyle5", _("New Style 5")),
+	("newstyle6", _("New Style 6")),
+	("newstyle7", _("New Style 7")),
+	("newstyle8", _("New Style 8")),
+	("newstyle9", _("New Style 9")),
+])
+# lulu
 
 def setEPGCachePath(configElement):
 	if os.path.isdir(configElement.value) or os.path.islink(configElement.value):
 		configElement.value = os.path.join(configElement.value, "epg.dat")
 	enigma.eEPGCache.getInstance().setCacheFile(configElement.value)
 
-#demo code for use of standby enter leave callbacks
-#def leaveStandby():
-#	print "!!!!!!!!!!!!!!!!!leave standby"
+# demo code for use of standby enter leave callbacks
+# def leaveStandby():
+	# print "!!!!!!!!!!!!!!!!!leave standby"
 
-#def standbyCountChanged(configElement):
-#	print "!!!!!!!!!!!!!!!!!enter standby num", configElement.value
-#	from Screens.Standby import inStandby
-#	inStandby.onClose.append(leaveStandby)
+# def standbyCountChanged(configElement):
+	# print "!!!!!!!!!!!!!!!!!enter standby num", configElement.value
+	# from Screens.Standby import inStandby
+	# inStandby.onClose.append(leaveStandby)
 
-#config.misc.standbyCounter.addNotifier(standbyCountChanged, initial_call = False)
-####################################################
+# config.misc.standbyCounter.addNotifier(standbyCountChanged, initial_call = False)
+# ###################################################
 
 
 profile("Twisted")
@@ -207,7 +246,7 @@ class Session:
 
 		if self.current_dialog.isTmp:
 			self.current_dialog.doClose()
-#			dump(self.current_dialog)
+			# dump(self.current_dialog)
 			del self.current_dialog
 		else:
 			del self.current_dialog.callback
@@ -289,7 +328,7 @@ class Session:
 		self.pushCurrent()
 		self.current_dialog = dialog
 		self.current_dialog.isTmp = False
-		self.current_dialog.callback = None # would cause re-entrancy problems.
+		self.current_dialog.callback = None  # would cause re-entrancy problems.
 		self.execBegin()
 
 	def openWithCallback(self, callback, screen, *arguments, **kwargs):
@@ -355,7 +394,7 @@ class PowerKey:
 		globalActionMap.actions["power_down"] = lambda *args: None
 		globalActionMap.actions["power_up"] = self.powerup
 		globalActionMap.actions["power_long"] = self.powerlong
-		globalActionMap.actions["deepstandby"] = self.shutdown # frontpanel long power button press
+		globalActionMap.actions["deepstandby"] = self.shutdown  # frontpanel long power button press
 		globalActionMap.actions["discrete_off"] = self.standby
 
 	def shutdown(self):
@@ -387,7 +426,6 @@ class PowerKey:
 				except:
 					print("[StartEnigma] Error during executing module %s, screen %s" % (selected[1], selected[2]))
 			elif selected[0] == "Menu":
-				from Screens.Menu import MainMenu, mdom
 				root = mdom.getroot()
 				for x in root.findall("menu"):
 					if x.get("key") == "shutdown":
@@ -422,7 +460,7 @@ class AutoScartControl:
 		self.VCRSbChanged(self.current_vcr_sb)
 
 	def VCRSbChanged(self, value):
-		#print "vcr sb changed to", value
+		# print "vcr sb changed to", value
 		self.current_vcr_sb = value
 		if config.av.vcrswitch.value or value > 2:
 			if value:
@@ -502,7 +540,7 @@ def runScreenTest():
 	from time import time, strftime, localtime
 	from Tools.StbHardware import setFPWakeuptime, setRTCtime
 	from Screens.SleepTimerEdit import isNextWakeupTime
-	#get currentTime
+	# get currentTime
 	nowTime = time()
 	wakeupList = [
 		x for x in ((session.nav.RecordTimer.getNextRecordingTime(), 0),
@@ -513,9 +551,8 @@ def runScreenTest():
 	]
 	wakeupList.sort()
 	if wakeupList:
-		from time import strftime
 		startTime = wakeupList[0]
-		if (startTime[0] - nowTime) < 270: # no time to switch box back on
+		if (startTime[0] - nowTime) < 270:  # no time to switch box back on
 			wptime = nowTime + 30  # so switch back on in 30 seconds
 		else:
 			wptime = startTime[0] - 240
@@ -593,10 +630,10 @@ import Components.RcModel
 profile("Init:PowerOffTimer")
 from Components.PowerOffTimer import powerOffTimer
 
-#from enigma import dump_malloc_stats
-#t = eTimer()
-#t.callback.append(dump_malloc_stats)
-#t.start(1000)
+# from enigma import dump_malloc_stats
+# t = eTimer()
+# t.callback.append(dump_malloc_stats)
+# t.start(1000)
 
 # first, setup a screen
 try:
