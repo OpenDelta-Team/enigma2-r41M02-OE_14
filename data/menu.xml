@@ -1,25 +1,25 @@
 <menu key="mainmenu" text="Main menu">
 	<!--
-    The following types are allowed:
-    <screen [module="mod"] [screen="classname"]>[arguments]</screen>
-        Executes Screen called "classname" from module "Screen.mod".
-        If no module is given, Screen must be globally available.
-        If no screen is given, module is used as screen class name.
-        Arguments must be comma seperated (will be fed to eval), and can
-            use stuff from module.
-        (Of course you must specify at least one of module, screen.)
-    <plugin [extensions/system="pluginname"] [screen="classname"]>[arguments]</plugin>
-        Either "extensions" or "system" must be used. "extensions" is for
-        Plugin.Extensions plugins and "system" is for Plugins.SystemPlugins.
-    <plugin [extensions="pluginname"] [screen="classname"]>[arguments]</plugin>
-        Executes Screen called "classname" from module "Plugins.Extensions.pluginname.plugin".
-        If no screen is given, "pluginname" is used as screen class name.
-        Arguments must be comma seperated (will be fed to eval), and can
-            use stuff from module.
-    <setup id="id" />
-        Opens a setup with specified id.
-    <code> .. code .. </code>
-        Python "exec"s code.
+	The following types are allowed:
+	<screen [module="mod"] [screen="classname"]>[arguments]</screen>
+		Executes Screen called "classname" from module "Screen.mod".
+		If no module is given, Screen must be globally available.
+		If no screen is given, module is used as screen class name.
+		Arguments must be comma seperated (will be fed to eval), and can
+			use stuff from module.
+		(Of course you must specify at least one of module, screen.)
+	<plugin [extensions/system="pluginname"] [screen="classname"]>[arguments]</plugin>
+		Either "extensions" or "system" must be used. "extensions" is for
+		Plugin.Extensions plugins and "system" is for Plugins.SystemPlugins.
+	<plugin [extensions="pluginname"] [screen="classname"]>[arguments]</plugin>
+		Executes Screen called "classname" from module "Plugins.Extensions.pluginname.plugin".
+		If no screen is given, "pluginname" is used as screen class name.
+		Arguments must be comma seperated (will be fed to eval), and can
+			use stuff from module.
+	<setup id="id" />
+		Opens a setup with specified id.
+	<code> .. code .. </code>
+		Python "exec"s code.
 -->
 	<!-- Menu /  by lululla-->
 	<menu key="menu_Menu" level="0" text="Corvoboys Menu">
@@ -48,16 +48,16 @@ self.session.open(PluginSetup)
 </code>
 		</item>
 		<!-- <item weight="13" level="0" text="Vavoo Stream Live" key="vavoo">
-            <code>
+			<code>
 from Screens.vavoo import VavooScreen
 self.session.open(VavooScreen)
 </code>
-        </item> -->
+		</item> -->
 		<item weight="13" level="0" text="Vavoo Stream Live" key="vavoo">
 			<code>
 from Screens.vavoo import PluginMain
 PluginMain(self.session)
-    </code>
+	</code>
 		</item>
 		<item weight="14" level="0" text="Radio Stream" key="radiom">
 			<code>
@@ -205,7 +205,7 @@ self.session.open(CrashLogScreen)
 					<screen module="Hotkey" screen="HotkeySetup"/>
 				</item>
 			</menu>
-			
+
 			<item key="change_password" level="0" text="Change Password">
 				<screen module="ChangePassword" screen="ChangePasswordScreen"/>
 			</item>
