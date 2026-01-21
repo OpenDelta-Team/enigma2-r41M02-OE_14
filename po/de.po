@@ -1249,7 +1249,7 @@ msgstr "Automatische Installation, bitte warten bis alle Pakete geupdated sind"
 
 #, fuzzy
 msgid "Automatic Language"
-msgstr "Automatische Sprache"
+msgstr "Automatische Sprachauswahl"
 
 msgid "Automatic Scan"
 msgstr "Automatische Suche"
@@ -2237,7 +2237,7 @@ msgid "Configure the initial fast forward speed. When you press the fast forward
 msgstr "Anfängliche Vorspul-Geschwindigkeit. Wenn die Vorspul-Taste betätigt wird, wird diese Geschwindigkeit zum Spulen verwendet."
 
 msgid "Configure the initial rewind speed. When you press the rewind button, winding will start at this speed."
-msgstr "Anfängliche Rückspul-Geschwindigkeit. Wenn die Rückspultaste betätigt wird, wird diese Geschwindigkeit zum Spulen verwendet."
+msgstr "Anfängliche Rückspul-Geschwindigkeit. Wenn die Rückspul-Taste betätigt wird, wird diese Geschwindigkeit zum Spulen verwendet."
 
 msgid "Configure the latitude of your location."
 msgstr "Breitengrad Ihres Standortes."
@@ -9118,7 +9118,7 @@ msgstr "Sendungsdetails anzeigen"
 
 #, fuzzy
 msgid "Show simple second infobar"
-msgstr "Zweite Infoleiste anzeigen"
+msgstr "Einfache zweite Infoleiste anzeigen"
 
 msgid "Show single service EPG"
 msgstr "Einzel-Kanal-EPG anzeigen"
@@ -11602,16 +11602,16 @@ msgid "What type of service scan do you want?"
 msgstr "Welche Art von Service-Scan wollen Sie durchführen?"
 
 msgid "When enabled a simplified version from the second infobar is shown. This can also be toggled instantly by holding the OK buttin when the second infobar is visible. The infobar will shortly disappear and then shown in the other mode."
-msgstr ""
+msgstr "Wenn aktiviert, wird eine vereinfachte Version der zweiten Infoleiste angezeigt. Diese kann auch sofort umgeschaltet werden, indem Sie die OK-Taste gedrückt halten, wenn die zweite Infoleiste sichtbar ist. Die Infoleiste verschwindet kurz und wird dann im anderen Modus angezeigt."
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are updated"
-msgstr "Wenn Sie diese Option aktivieren, werden alle vorhandenen Kanallisten geladen, auch wenn diese nicht in der bouquets.tv oder bouquets.radio verlinkt sind. Dies erlaubt Ihnen z.B. Ihre eigenen Kanallisten zu erhalten, wenn eine Aktualisierung von installierten Kanallisten erfolgt."
+msgstr "Wenn aktiviert, werden alle vorhandenen Kanallisten geladen, auch wenn diese nicht in der bouquets.tv oder bouquets.radio verlinkt sind. Dies erlaubt Ihnen z.B. Ihre eigenen Kanallisten zu erhalten, wenn eine Aktualisierung von installierten Kanallisten erfolgt."
 
 msgid "When enabled extra information is shown on the infobar. This can also be toggled instantly by holding the OK button when the inforbar is not visible."
-msgstr ""
+msgstr "Wenn aktiviert, werden zusätzliche Informationen in der Infoleiste angezeigt. Diese Funktion kann auch sofort aktiviert werden, indem Sie die OK-Taste gedrückt halten, wenn die Infoleiste nicht sichtbar ist."
 
 msgid "When enabled the Picture in Picture window can be closed with 'exit' button."
-msgstr "Falls aktiviert, kann PiP mit der Exit-Taste geschlossen werden."
+msgstr "Wenn aktiviert, kann PiP mit der Exit-Taste geschlossen werden."
 
 msgid "When enabled the arrow buttons around the OK button will follow the 'neutrino' style zap controls instead of the enigma2 style."
 msgstr "Wenn aktiviert, kann das Verhalten der Steuerkreuz-Tasten auf den Neutrino-Stil angepasst werden."
@@ -11646,16 +11646,16 @@ msgstr "Wenn aktiviert, kann der Reserve-Tuner im OpenWebIf konfiguriert werden.
 
 msgid "When enabled you can specify a timeframe to ignore the shutdown timer when the receiver is in standby mode"
 msgstr ""
-"Falls aktiviert, kann ein Zeitfenster angegeben werden, indem der Ausschalt-Timer nicht beachtet wird, auch wenn sich der Receiver im\n"
+"Wenn aktiviert, kann ein Zeitfenster angegeben werden, indem der Ausschalt-Timer nicht beachtet wird, auch wenn sich der Receiver im\n"
 "Standby-Modus befindet."
 
 msgid "When enabled you can specify a timeframe when the inactivity sleeptimer is ignored. Not the detection is disabled during this timeframe but the inactivity timeout is disabled"
 msgstr ""
-"Wenn diese Option aktiviert ist, können Sie einen Zeitrahmen angeben, wann der\n"
+"Wenn aktiviert, können Sie einen Zeitrahmen angeben, wann der\n"
 "Inaktivitäts-Ausschalt-Timer ignoriert wird. Während dieses Zeitraums ist die Erkennung nicht deaktiviert, das Inaktivitätszeitlimit ist jedoch deaktiviert."
 
 msgid "When enabled you can specify an extra timeframe when the inactivity sleeptimer is ignored. Not the detection is disabled during this timeframe but the inactivity timeout is disabled"
-msgstr "Wenn diese Option aktiviert ist, können Sie einen zusätzlichen Zeitrahmen angeben, wann der Inaktivitäts-Ausschalt-Timer ignoriert wird. Während dieses Zeitraums ist die Erkennung nicht deaktiviert, das Inaktivitätszeitlimit ist jedoch deaktiviert."
+msgstr "Wenn aktiviert, können Sie einen zusätzlichen Zeitrahmen angeben, wann der Inaktivitäts-Ausschalt-Timer ignoriert wird. Während dieses Zeitraums ist die Erkennung nicht deaktiviert, das Inaktivitätszeitlimit ist jedoch deaktiviert."
 
 msgid "When enabled you can zap channels with the CH+/-, B+/-, P+/- buttons instead of opening the channel selection list."
 msgstr "Wenn aktiviert, kann mit den Tasten links / rechts sowie mit den CH+/-, B+/-, P+/- Tasten zwischen den Kanälen umgeschaltet werden statt die Kanalliste zu öffnen."
@@ -11718,7 +11718,7 @@ msgid "When enabled, error messages related to zapping will not be shown."
 msgstr "Zapping-Fehler nicht anzeigen."
 
 msgid "When enabled, external subtitles will be always turned on for playback movie."
-msgstr "Falls aktiviert, werden externe Untertitel (sofern vorhanden) beim Abspielen von Filmen immer angezeigt."
+msgstr "Wenn aktiviert, werden externe Untertitel (sofern vorhanden) beim Abspielen von Filmen immer angezeigt."
 
 msgid "When enabled, graphical DVB subtitles are preferred over teletext subtitles, when both types are available."
 msgstr ""
@@ -12370,13 +12370,13 @@ msgid "bottom"
 msgstr "Unten"
 
 msgid "broadcasting/press"
-msgstr "Rundsendung/Presse"
+msgstr "Rundfunk/Presse"
 
 msgid "by date"
 msgstr "Aufnahmen nach Datum sortieren"
 
 msgid "cartoon/puppets"
-msgstr "Zeichentrickfilm/Marionetten"
+msgstr "Zeichentrick/Puppen"
 
 msgid "center"
 msgstr "Zentriert"
@@ -12415,13 +12415,13 @@ msgid "controlled by HDMI"
 msgstr "gesteuert über HDMI"
 
 msgid "convert to AC3"
-msgstr "konvertiere zu AC3"
+msgstr "zu AC3 konvertieren"
 
 msgid "convert to DTS"
-msgstr "konvertiere zu  DTS"
+msgstr "zu DTS konvertieren"
 
 msgid "convert to multi-channel PCM"
-msgstr "konvertiere zu Multikanal PCM"
+msgstr "zu Multikanal PCM konvertieren"
 
 msgid "cooking"
 msgstr "Kochen"
@@ -12460,13 +12460,13 @@ msgid "discussion/interview/debate"
 msgstr "Diskussion/Interview/Debatte"
 
 msgid "do nothing"
-msgstr "Nichts"
+msgstr "Nichts machen"
 
 msgid "documentary"
-msgstr "Dokumentationen"
+msgstr "Dokumentation"
 
 msgid "don't descramble, record ecm"
-msgstr "Nicht entschlüsseln, Aufnahme ECM"
+msgstr "Nicht entschlüsseln, ECM aufnehmen"
 
 msgid "done!"
 msgstr "Erledigt!"
@@ -12475,7 +12475,7 @@ msgid "east"
 msgstr "Osten"
 
 msgid "economics/social advisory"
-msgstr "Wirtschaft/Soziale Ratgeber"
+msgstr "Wirtschaft/Sozialberatung"
 
 msgid "educational/science/factual topics (general)"
 msgstr "Bildung/Wissenschaft/Sachbezogene Themen (Allgemein)"
@@ -12563,7 +12563,7 @@ msgid "flat alphabetic reverse"
 msgstr "Umgekehrtes Alphabet"
 
 msgid "folk/traditional music"
-msgstr "Volks/Traditionelle Musik"
+msgstr "Volks-/Traditionelle Musik"
 
 msgid "football/soccer"
 msgstr "Fußball"
@@ -12575,7 +12575,7 @@ msgid "force enabled"
 msgstr "aktiviert erzwingen"
 
 msgid "foreign countries/expeditions"
-msgstr "Ausland/Expeditionen"
+msgstr "Andere Länder/Expeditionen"
 
 msgid "forward to the next chapter"
 msgstr "Weiter zum nächsten Kapitel"
@@ -12605,7 +12605,7 @@ msgid "green"
 msgstr "Grün"
 
 msgid "half an hour"
-msgstr ""
+msgstr "eine halbe Stunde"
 
 msgid "handicraft"
 msgstr "Handwerkskunst"
@@ -12644,7 +12644,7 @@ msgid "insert mark here"
 msgstr "Markierung hier einfügen"
 
 msgid "invalid type"
-msgstr "Ungültige Werte"
+msgstr "Ungültiger Wert"
 
 msgid "jazz"
 msgstr "Jazz"
@@ -12674,7 +12674,7 @@ msgid "left, wrapped"
 msgstr "links, umgebrochen"
 
 msgid "leisure hobbies (general)"
-msgstr "Freizeitbeschäftigungen (Allgemein)"
+msgstr "Freizeit (Allgemein)"
 
 msgid "length"
 msgstr "Länge"
@@ -12701,7 +12701,7 @@ msgid "literature"
 msgstr "Literatur"
 
 msgid "local sports"
-msgstr "Sport (Allgemein)"
+msgstr "Lokalsport"
 
 msgid "locked"
 msgstr "gesperrt"
@@ -12756,7 +12756,7 @@ msgid "move up to previous entry"
 msgstr "Zum vorherigen Eintrag gehen"
 
 msgid "movie (general)"
-msgstr "Film/Drama (Allgemein)"
+msgstr "Film (Allgemein)"
 
 msgid "multi"
 msgstr "multi"
@@ -12780,7 +12780,7 @@ msgid "new media"
 msgstr "Neue Medien"
 
 msgid "news magazine"
-msgstr "Nachrichtensendung"
+msgstr "Nachrichtenmagazin"
 
 msgid "news/current affairs (general)"
 msgstr "Nachrichten/Tagesgeschehen (Allgemein)"
@@ -12897,14 +12897,14 @@ msgid "please wait, loading picture..."
 msgstr "Bitte warten, Bild wird geladen…"
 
 msgid "popular culture/traditional arts"
-msgstr "Beliebte Kultur/Traditionelle Kunst"
+msgstr "Popkultur/Traditionelle Kunst"
 
 #, fuzzy
 msgid "port"
 msgstr "Sport"
 
 msgid "pre-school children's program"
-msgstr "Vorschul Kinderprogramm"
+msgstr "Vorschulkinderprogramm"
 
 msgid "preserve bookmarks in cuts"
 msgstr "Schnitt Lesezeichen anlegen"
@@ -12913,7 +12913,7 @@ msgid "priority"
 msgstr "Priorität"
 
 msgid "receiver software because updates are available."
-msgstr "Receiver Software, weil Updates verfügbar sind."
+msgstr "Receiversoftware, weil Updates verfügbar sind."
 
 msgid "record"
 msgstr "Aufnehmen"
@@ -12925,7 +12925,7 @@ msgid "red"
 msgstr "Rot"
 
 msgid "religion"
-msgstr "Glaube"
+msgstr "Religion"
 
 msgid "remarkable people"
 msgstr "Außergewöhnliche Menschen"
@@ -12979,7 +12979,7 @@ msgid "scan state"
 msgstr "Status"
 
 msgid "science fiction/fantasy/horror"
-msgstr "Science-Fiction/Fantasie/Horror"
+msgstr "Science-Fiction/Fantasy/Horror"
 
 msgid "select CAId's"
 msgstr "CAIDs auswählen"
@@ -12991,13 +12991,13 @@ msgid "serious music/classic music"
 msgstr "Ernste Musik/Klassische Musik"
 
 msgid "serious/classical/religious/historical drama"
-msgstr "Ernst/Klassisch/Religiös/Historischer Film/Drama"
+msgstr "Ernstes/Klassisches/Religiöses/Historisches Drama"
 
 msgid "service off-air"
 msgstr "Service außerhalb der Luft"
 
 msgid "show DVD main menu"
-msgstr "Das DVD Hauptmenü anzeigen"
+msgstr "Das DVD-Hauptmenü anzeigen"
 
 msgid "show all tags"
 msgstr "Alle Tags anzeigen"
@@ -13012,7 +13012,7 @@ msgid "show softwaremanager on blue button"
 msgstr "Softwaremanager auf blauer Taste anzeigen"
 
 msgid "show/game show (general)"
-msgstr "Show/Spielsendung (Allgemein)"
+msgstr "Show/Spielshow (Allgemein)"
 
 msgid "shuffle"
 msgstr "Mischen"
@@ -13024,10 +13024,10 @@ msgid "simple"
 msgstr "Einfach"
 
 msgid "skip backward"
-msgstr "Rückwärts spulen"
+msgstr "Zurück springen"
 
 msgid "skip forward"
-msgstr "Vorwärts spulen"
+msgstr "Vorwärts springen"
 
 #, python-format
 msgid "slot%s - %s"
