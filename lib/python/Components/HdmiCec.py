@@ -468,7 +468,7 @@ class HdmiCec:
 			elif cmd == 0x9F: # request get CEC version
 				self.sendMessage(message.getAddress(), 'sendcecversion')
 
-			# handle standby request from the tv or from starting box (if is enabled "Running boxes to standby")
+			# handle standby request from the tv or from starting box (if is enabled "All active receivers in standby")
 			if cmd == 0x36 and ( config.hdmicec.handle_tv_standby.value or config.hdmicec.standby_running_boxes.value):
 				# avoid echoing the 'System Standby' command back to the tv
 				self.handlingStandbyFromTV = True
