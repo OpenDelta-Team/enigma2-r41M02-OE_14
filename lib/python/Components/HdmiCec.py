@@ -302,7 +302,7 @@ class HdmiCec:
 				messages.append("menuactive")
 			if config.hdmicec.standby_running_boxes.value:
 				for i in CEC_BOX_DEVICES:
-					self.sendMessages(i, ("standby",)
+					self.sendMessages(i, ("standby",))
 			if messages:
 				self.sendMessages(0, messages)
 
