@@ -845,7 +845,7 @@ msgid "Advanced software"
 msgstr "Erweiterte Software"
 
 msgid "Advanced software plugin"
-msgstr "Erweitertes Software Plugin"
+msgstr "Erweitertes Software-Plugin"
 
 msgid "Advanced video enhancement setup"
 msgstr "Erweiterte A/V-Einstellungen"
@@ -938,16 +938,16 @@ msgid "Alpha"
 msgstr "Transparenz"
 
 msgid "Alphabetical under headings"
-msgstr ""
+msgstr "Alphabetisch unter Überschriften"
 
 msgid "Also import at reboot/restart enigma2"
-msgstr "Auch bei Neustarten / Neustart enigma2 importieren"
+msgstr "Auch bei (Enigma2-)Neustart importieren"
 
 msgid "Also import from the extension menu"
 msgstr "Auch aus dem Erweiterungsmenü importieren"
 
 msgid "Also import when box is leaving standby"
-msgstr "Auch imporieren, wenn die Box aus dem Standby geht"
+msgstr "Auch imporieren wenn die Box aus dem Standby geht"
 
 msgid "Also on standby"
 msgstr "Auch in Standby"
@@ -959,7 +959,7 @@ msgid "Alternative URL for images listed on FlashImage"
 msgstr "Alternative URL für Images gelistet in \"Flashe Image\""
 
 msgid "Alternative URLs for DVB-T/C or ATSC"
-msgstr "Alternative URLs für DVB-T / C oder ATSC"
+msgstr "Alternative URLs für DVB-T/C oder ATSC"
 
 msgid "Alternative numbering mode"
 msgstr "Alternativer Nummerierungs-Modus"
@@ -1007,7 +1007,7 @@ msgid "Anguilla"
 msgstr "Anguilla"
 
 msgid "Antarctica"
-msgstr "Antarctica"
+msgstr "Antarktis"
 
 msgid "Antigua and Barbuda"
 msgstr "Antigua und Barbuda"
@@ -1140,7 +1140,7 @@ msgid "Audio"
 msgstr "Ton"
 
 msgid "Audio / Video"
-msgstr "Audio / Video"
+msgstr "Audio/Video"
 
 msgid "Audio PID"
 msgstr "Audio PID"
@@ -1220,7 +1220,7 @@ msgid "Auto flesh"
 msgstr "Auto Flesh"
 
 msgid "Auto focus"
-msgstr "Auto Fokus"
+msgstr "Auto-Fokus"
 
 msgid "Auto focus commencing..."
 msgstr "Auto-Fokusierung beginnt …"
@@ -1245,11 +1245,11 @@ msgid "Autoinstalling Completed"
 msgstr "Automatische Installation abgeschlossen"
 
 msgid "Autoinstalling please wait for packages being updated"
-msgstr "Automatische Installation, bitte warten bis alle Pakete geupdated sind"
+msgstr "Automatische Installation läuft, bitte warten bis alle Pakete geupdated sind"
 
 #, fuzzy
 msgid "Automatic Language"
-msgstr "Automatische Sprache"
+msgstr "Automatische Sprachauswahl"
 
 msgid "Automatic Scan"
 msgstr "Automatische Suche"
@@ -1279,7 +1279,7 @@ msgid "Available locales are:"
 msgstr "Verfügbare Gebietsschemas sind:"
 
 msgid "Azerbaijan"
-msgstr "Azerbaijan"
+msgstr "Aserbaidschan"
 
 msgid "B"
 msgstr "B"
@@ -1352,7 +1352,7 @@ msgid "Bandwidth"
 msgstr "Bandbreite"
 
 msgid "Bangladesh"
-msgstr "Bangladesh"
+msgstr "Bangladesch"
 
 msgid "Barbados"
 msgstr "Barbados"
@@ -1361,7 +1361,7 @@ msgid "Basic PID info"
 msgstr "Basis PID Info"
 
 msgid "Basic info"
-msgstr "Basis Info"
+msgstr "Basis-Info"
 
 msgid "Basque"
 msgstr "Baskisch"
@@ -1431,20 +1431,20 @@ msgid "Blindscan terrestrial (if possible)"
 msgstr "Blindscan terristisch (wenn möglich)"
 
 msgid "Block noise reduction"
-msgstr "Block Noise Reduzierung"
+msgstr "Block-Rauschunterdrückung"
 
 msgid "Blue"
 msgstr "Blau"
 
 #, fuzzy
 msgid "Blue button function"
-msgstr "Funktion auswählen"
+msgstr "Funktion der blauen Taste"
 
 msgid "Bolivia (Plurinational State of)"
-msgstr "Bolivien (Plurinationaler Staat)"
+msgstr "Bolivien"
 
 msgid "Bonaire, Sint Eustatius and Saba"
-msgstr "Bonaire, Sint Eustatius and Saba"
+msgstr "Bonaire, Sint Eustatius und Saba"
 
 msgid "Bookmarks"
 msgstr "Lesezeichen"
@@ -1456,7 +1456,7 @@ msgid "Boost green"
 msgstr "Boost grün"
 
 msgid "Boot to Android image"
-msgstr "Android Booten (Hochfahren)"
+msgstr "Android-Image booten (Hochfahren)"
 
 #, python-format
 msgid "Boot to Recovery image - slot0 %s"
@@ -1466,7 +1466,7 @@ msgid "Boot to Recovery menu"
 msgstr "Recovery-Menü Booten (Hochfahren)"
 
 msgid "Bootup time"
-msgstr "Boot Dauer"
+msgstr "Bootdauer"
 
 msgid "Bosnia and Herzegovina"
 msgstr "Bosnien und Herzegowina"
@@ -1480,10 +1480,10 @@ msgstr "Unten"
 
 #, fuzzy
 msgid "Bouquet down"
-msgstr "Lautstärke veringern"
+msgstr "Bouquet -"
 
 msgid "Bouquet up"
-msgstr ""
+msgstr "Bouquet +"
 
 msgid "Bouvet Island"
 msgstr "Bouvet Island"
@@ -1492,7 +1492,7 @@ msgid "Brazil"
 msgstr "Brasilien"
 
 msgid "Brief help information for buttons in your current context."
-msgstr ""
+msgstr "Kurze Hilfe zu den Tasten im aktuellen Kontext."
 
 msgid "Brightness"
 msgstr "Helligkeit"
@@ -1520,11 +1520,11 @@ msgid "Burkina Faso"
 msgstr "Burkina Faso"
 
 msgid "Burn DVD"
-msgstr "Brenne DVD"
+msgstr "DVD brennen"
 
 #, python-format
 msgid "Burn audio track (%s)"
-msgstr "Brenne Audiospur (%s)"
+msgstr "Audiospur brennen (%s)"
 
 msgid "Burn existing image to DVD"
 msgstr "Vorhandenes Image auf DVD brennen"
@@ -1564,7 +1564,7 @@ msgstr "CI (Common Interface) Einstellungen"
 
 #, fuzzy
 msgid "CI Boot Delay"
-msgstr "DVB CI-Verzögerung"
+msgstr "CI-Verzögerung beim Start"
 
 msgid "CI assignment"
 msgstr "CI-Zuweisung"
@@ -1869,13 +1869,13 @@ msgid "Chinese - Traditional"
 msgstr "Chinesisch (traditionell)"
 
 msgid "Choose Tuner"
-msgstr "Wähle Tuner"
+msgstr "Tuner auswählen"
 
 msgid "Choose bouquet"
-msgstr "Favoritenliste auswählen"
+msgstr "Bouquet auswählen"
 
 msgid "Choose the option to correct invalid EPG data."
-msgstr "Wähle die Option  ungültige EPG-Daten zu korrigieren."
+msgstr "Wähle die Option ungültige EPG-Daten zu korrigieren."
 
 msgid "Choose the order in which items are displayed in Help windows"
 msgstr ""
@@ -1942,7 +1942,7 @@ msgid "Client is streaming from this box!"
 msgstr "Ein Client streamt von der Box !"
 
 msgid "Clone TV screen to LCD"
-msgstr "Klone TV Bild zum LCD"
+msgstr "Klone TV-Bild zum LCD"
 
 msgid "Clone TV screen to LCD mode"
 msgstr "Klonen Sie den TV-Bildschirm in den LCD-Modus"
@@ -2022,7 +2022,7 @@ msgid "Communication"
 msgstr "Kommunikation"
 
 msgid "Comoros"
-msgstr "Comoros"
+msgstr "Komoren"
 
 msgid "Compact flash"
 msgstr "Compact Flash"
@@ -2142,7 +2142,7 @@ msgid "Configure the DiSEqC mode for this LNB."
 msgstr "Einstellen des DiSEqC-Modus für diesen LNB."
 
 msgid "Configure the IP address."
-msgstr "IP Adresse konfigurieren."
+msgstr "IP-Adresse konfigurieren."
 
 msgid "Configure the aspect ratio of the screen."
 msgstr "Bildformat des Bildschirms konfigurieren."
@@ -2210,7 +2210,7 @@ msgid "Configure the fourth audio language."
 msgstr "Wahl der vierten Audiospur-Sprache."
 
 msgid "Configure the fourth subtitle language."
-msgstr "Wahl der vierten Untertitel Sprache."
+msgstr "Wahl der vierten Untertitel-Sprache."
 
 msgid "Configure the function of the '0' button when Picture in Picture is active."
 msgstr "Funktion der '0' Taste während Bild im Bild aktiv ist."
@@ -2228,7 +2228,7 @@ msgid "Configure the general audio volume step size (limit 1-10)."
 msgstr "Konfigurieren Sie die allgemeine Audio-Lautstärke Schrittgröße (Grenze 1-10)."
 
 msgid "Configure the hard disk drive to go to standby after the specified idle time."
-msgstr "Standby der Festplatte nach einer gewissen Zeit."
+msgstr "Die Festplatte wechselt nach der angegebenen Leerlaufzeit in den Standby-Modus."
 
 msgid "Configure the horizontal alignment of the subtitles."
 msgstr "Horizontale Ausrichtung der Untertitel."
@@ -2237,7 +2237,7 @@ msgid "Configure the initial fast forward speed. When you press the fast forward
 msgstr "Anfängliche Vorspul-Geschwindigkeit. Wenn die Vorspul-Taste betätigt wird, wird diese Geschwindigkeit zum Spulen verwendet."
 
 msgid "Configure the initial rewind speed. When you press the rewind button, winding will start at this speed."
-msgstr "Anfängliche Rückspul-Geschwindigkeit. Wenn die Rückspultaste betätigt wird, wird diese Geschwindigkeit zum Spulen verwendet."
+msgstr "Anfängliche Rückspul-Geschwindigkeit. Wenn die Rückspul-Taste betätigt wird, wird diese Geschwindigkeit zum Spulen verwendet."
 
 msgid "Configure the latitude of your location."
 msgstr "Breitengrad Ihres Standortes."
@@ -2339,7 +2339,7 @@ msgid "Configure the video output mode (or resolution)."
 msgstr "Video-Ausgangs Modus (oder Auflösung)."
 
 msgid "Configure the way in which the receiver changes channels."
-msgstr "Anpassung des Vorganges bei Kanalwechsel."
+msgstr "Verhalten bei Kanalwechsel."
 
 msgid "Configure this tuner using simple or advanced options, or loop it through to another tuner, or copy a configuration from another tuner, or disable it."
 msgstr "Konfigurieren Sie diesen Tuner mit einfachen oder erweiterten Optionen, oder führen Sie ihn zu einem anderen Tuner durch, oder kopieren Sie eine Konfiguration von einem anderen Tuner oder deaktivieren Sie sie."
@@ -2614,7 +2614,7 @@ msgid "Cutlist editor..."
 msgstr "Schnitteditor…"
 
 msgid "Cyan"
-msgstr ""
+msgstr "Cyan"
 
 msgid "Cyprus"
 msgstr "Zypern"
@@ -2647,10 +2647,10 @@ msgid "DTS"
 msgstr "DTS"
 
 msgid "DTS downmix"
-msgstr "DTS downmix"
+msgstr "DTS Downmix"
 
 msgid "DTS-HD(HR/MA) downmix"
-msgstr "DTS-HD(HR/MA) downmix"
+msgstr "DTS-HD(HR/MA) Downmix"
 
 msgid "DUAL LAYER DVD"
 msgstr "Doppelschicht DVD (DUAL LAYER)"
@@ -2672,16 +2672,16 @@ msgid "DVB subtitles color filter"
 msgstr "Farbe für externe Untertitel"
 
 msgid "DVB type"
-msgstr "DVB type"
+msgstr "DVB-Typ"
 
 msgid "DVD Burn"
-msgstr "DVD Brennen"
+msgstr "DVD brennen"
 
 msgid "DVD Menu"
-msgstr "DVD Menü"
+msgstr "DVD-Menü"
 
 msgid "DVD data format"
-msgstr "DVD Format"
+msgstr "DVD-Format"
 
 msgid "DVD file browser"
 msgstr "DVD Datei Browser"
@@ -2690,10 +2690,10 @@ msgid "DVD media toolbox"
 msgstr "DVD Medien-Toolbox"
 
 msgid "DVD player"
-msgstr "DVD Player"
+msgstr "DVD-Player"
 
 msgid "DVD titlelist"
-msgstr "DVD Titelliste"
+msgstr "DVD-Titelliste"
 
 msgid "DVDPlayer"
 msgstr "DVD-Player"
@@ -2704,7 +2704,7 @@ msgstr "DVD-Player"
 
 #, fuzzy
 msgid "DVDTitle List"
-msgstr "DVD Titelliste"
+msgstr "DVD-Titelliste"
 
 #, fuzzy
 msgid "DVDToolbox"
@@ -2726,7 +2726,7 @@ msgid "Debug to file"
 msgstr "Debuggen in Datei"
 
 msgid "Deep Standby LED"
-msgstr "Tiefschlaf / Ausschalten"
+msgstr "Deep Standby LED"
 
 msgid "Deep standby"
 msgstr "Tiefschlaf / Ausschalten"
@@ -2764,43 +2764,43 @@ msgid "Define the location of the EPG Cache file."
 msgstr "Definieren Sie den Speicherort der EPG-Cache-Datei."
 
 msgid "Delay after change voltage before switch command"
-msgstr "Pause nach Spannungsänderung vor Switch-Kommando"
+msgstr "Verzögerung nach Spannungsänderung vor Switch-Kommando"
 
 msgid "Delay after continuous tone disable before diseqc"
-msgstr "Pause nach ausschalten vom kontinuierlichen Tonsignal vor Diseqc-Kommando"
+msgstr "Verzögerung nach ausschalten vom kontinuierlichen Tonsignal vor Diseqc-Kommando"
 
 msgid "Delay after diseqc peripherial poweron command"
-msgstr "Pause nach An-Signal für DiSEqC-Peripherie"
+msgstr "Verzögerung nach An-Signal für DiSEqC-Peripherie"
 
 msgid "Delay after diseqc reset command"
-msgstr "Pause nach DiSEqC-Reset-Kommando"
+msgstr "Verzögerung nach DiSEqC-Reset-Kommando"
 
 msgid "Delay after enable voltage before motor command"
-msgstr "Pause nachdem Spannung anliegt bevor Motor-Kommando"
+msgstr "Verzögerung nachdem Spannung anliegt bevor Motor-Kommando"
 
 msgid "Delay after enable voltage before switch command"
-msgstr "Pause nachdem Spannung anliegt bevor Switch-Kommando"
+msgstr "Verzögerung nachdem Spannung anliegt bevor Switch-Kommando"
 
 msgid "Delay after final continuous tone change"
-msgstr "Pause nach letzter kontinuierlichen Tonänderung"
+msgstr "Verzögerung nach letzter kontinuierlichen Tonänderung"
 
 msgid "Delay after last diseqc command"
-msgstr "Pause nach letztem DiSEqC-Kommando"
+msgstr "Verzögerung nach letztem DiSEqC-Kommando"
 
 msgid "Delay after last voltage change"
-msgstr "Pause nach letzter Spannungsänderung"
+msgstr "Verzögerung nach letzter Spannungsänderung"
 
 msgid "Delay after motor stop command"
-msgstr "Pause nach Motor Stopp Kommando"
+msgstr "Verzögerung nach Motor Stopp Kommando"
 
 msgid "Delay after set voltage before measure motor power"
-msgstr "Pause nachdem Spannung anliegt vor Messung der Motorkraft"
+msgstr "Verzögerung nachdem Spannung anliegt vor Messung der Motorkraft"
 
 msgid "Delay after toneburst"
-msgstr "Pause nach Schallimpuls"
+msgstr "Verzögerung nach Schallimpuls"
 
 msgid "Delay after voltage change before motor command"
-msgstr "Pause nach Spannungsänderung vor Motor-Kommandos"
+msgstr "Verzögerung nach Spannungsänderung vor Motor-Kommandos"
 
 msgid "Delay before key repeat starts:"
 msgstr "Eingabewiederholung starten:"
@@ -2812,10 +2812,10 @@ msgid "Delay between CEC commands when sending a series of commands. Some device
 msgstr "Zeitintervall der Sende-Impulse HDMI zwischen 50-150ms einstellbar."
 
 msgid "Delay between diseqc commands"
-msgstr "Pause zwischen DiSEqC-Kommandos"
+msgstr "Verzögerung zwischen DiSEqC-Kommandos"
 
 msgid "Delay between switch and motor command"
-msgstr "Pause zwischen Switch- und Motor-Kommando"
+msgstr "Verzögerung zwischen Switch- und Motor-Kommando"
 
 msgid "Delay for external subtitles"
 msgstr "Verzögerung für externe Untertitel"
@@ -2830,7 +2830,7 @@ msgid "Delay in miliseconds between scrolling characters on display."
 msgstr "Verzögerung in Millisekunden zwischen Scroll-Zeichen auf dem Display."
 
 msgid "Delay when closing a stream relay service before reallocating the tuner for another service. Using '0' is only recommended for boxes with multiple satellite tuners."
-msgstr ""
+msgstr "Verzögerung beim Schließen eines Stream-Relay-Dienstes vor der Neuzuweisung des Tuners für einen anderen Dienst. Die Verwendung von '0' wird nur für Boxen mit mehreren Satellitentunern empfohlen."
 
 msgid "Delete"
 msgstr "Löschen"
@@ -3301,7 +3301,7 @@ msgid "E"
 msgstr "O"
 
 msgid "ECM Info"
-msgstr "ECM Info"
+msgstr "ECM-Info"
 
 msgid "EJECTCD"
 msgstr ""
@@ -3324,10 +3324,10 @@ msgid "EPG filter switching"
 msgstr "PID Filterung"
 
 msgid "EPG language selection 1"
-msgstr "EPG Sprachwahl 1"
+msgstr "EPG-Sprachwahl 1"
 
 msgid "EPG language selection 2"
-msgstr "EPG Sprachwahl 2"
+msgstr "EPG-Sprachwahl 2"
 
 msgid "EPG only"
 msgstr "Nur EPG"
@@ -3511,7 +3511,7 @@ msgid "Enable remote enigma2 receiver to be tried to tune into services that can
 msgstr "Aktiviert einen Reserve-Tuner, der versucht wird wenn ein Sender lokal nicht empfangen werden kann. (z.B. wenn Tuner belegt oder Sender lokal nicht verfügbar ist). Angabe der kompletten URL inklusive http:// und Port-Nummer (normal ...:8001), z.B. http://zweite_box:8001 notwendig."
 
 msgid "Enable setting a time interval for filtering events in SingleEPG using the 'Stop' button."
-msgstr ""
+msgstr "Aktivieren Sie die Einstellung eines Zeitintervalls für das Filtern von Ereignissen in SingleEPG mithilfe der Stop-Taste."
 
 msgid "Enable teletext caching"
 msgstr "Aktiviere Teletext-Cache"
@@ -3565,7 +3565,7 @@ msgid "End favourites edit"
 msgstr "Favoriteneditor beenden"
 
 msgid "End of the time interval during which events must begin to be displayed. If the filter is active, use keys 3 and 6 to adjust the end time, and key 0 to save."
-msgstr ""
+msgstr "Ende des Zeitintervalls, in dem Ereignisse angezeigt werden müssen. Wenn der Filter aktiv ist, verwenden Sie die Tasten 3 und 6, um die Endzeit anzupassen, und die Taste 0, um zu speichern."
 
 msgid "End time"
 msgstr "Endzeit"
@@ -3721,7 +3721,7 @@ msgstr ""
 "Erneut versuchen?"
 
 msgid "Estonia"
-msgstr "Estonia"
+msgstr "Estland"
 
 msgid "Estonian"
 msgstr "Estnisch"
@@ -4243,7 +4243,7 @@ msgstr "Fullbackup Images"
 
 #, fuzzy
 msgid "Function Key Actions"
-msgstr "Funktion der OK Taste"
+msgstr "Funktionstasten-Aktionen"
 
 msgid "Function of OK button"
 msgstr "Funktion der OK Taste"
@@ -4528,7 +4528,7 @@ msgid "Harddisk Setup"
 msgstr "Festplatten Einstellungen"
 
 msgid "Hardware Accelerated"
-msgstr "Hardware Beschleunigung"
+msgstr "Hardware-Beschleunigung"
 
 msgid "Hardware: "
 msgstr "Hardware: "
@@ -4575,7 +4575,7 @@ msgid "Hide player"
 msgstr "Player ausblenden"
 
 msgid "Hide sub-menu"
-msgstr "Untermenue ausblenden"
+msgstr "Untermenü ausblenden"
 
 msgid "Hide zap errors"
 msgstr "Zap-Fehler verbergen"
@@ -4587,13 +4587,13 @@ msgid "High bitrate support"
 msgstr "Kann hohe Datenraten verarbeiten"
 
 msgid "History Prev/Next"
-msgstr "History  Vorschau"
+msgstr "Vor/Zurück im Verlauf"
 
 msgid "History back"
-msgstr "History zurück"
+msgstr "Zurück im Verlauf"
 
 msgid "History next"
-msgstr "History weiter"
+msgstr "Vorwärts im Verlauf"
 
 msgid "Hold screen"
 msgstr "Bild halten"
@@ -4691,7 +4691,7 @@ msgid "ISO path"
 msgstr "ISO-Ausgabepfad"
 
 msgid "Iceland"
-msgstr "Iceland"
+msgstr "Island"
 
 msgid "Icons"
 msgstr "Symbole"
@@ -4808,7 +4808,7 @@ msgid "Import remote receiver URL"
 msgstr "Remote-Empfänger-URL importieren"
 
 msgid "In Setup screens choose whether to show the default value of the selected item in the description field."
-msgstr ""
+msgstr "Wählen Sie in den Setup-Bildschirmen aus, ob der Standardwert des ausgewählten Elements im Beschreibungsfeld angezeigt werden soll."
 
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Um die Timeraufnahme durchführen zu können, wurde auf den aufzunehmenden Sender umgeschaltet!\n"
@@ -4953,7 +4953,7 @@ msgid "Init"
 msgstr "Initialisieren"
 
 msgid "Initial fast forward speed"
-msgstr "Initiale Vorspul-Geschwindigkeit"
+msgstr "Anfängliche Vorspul-Geschwindigkeit"
 
 msgid "Initial location in new timers"
 msgstr "Initialer Ort für neue Timer"
@@ -4962,16 +4962,16 @@ msgid "Initial lock ratio"
 msgstr "Initiales Signalverhältnis"
 
 msgid "Initial rewind speed"
-msgstr "Initiale Rückspul-Geschwindigkeit"
+msgstr "Anfängliche Rückspul-Geschwindigkeit"
 
 msgid "Initial scroll delay"
 msgstr "Anfangsscrollverzögerung"
 
 msgid "Initial signal quality"
-msgstr "Initiale Signal Qualität"
+msgstr "Initiale Signalqualität"
 
 msgid "Initial signal quality:"
-msgstr "Initiale Signal Qualität:"
+msgstr "Initiale Signalqualität:"
 
 msgid "Initialization"
 msgstr "Initialisierung"
@@ -5257,7 +5257,7 @@ msgid "Korea (Democratic People's Republic of)"
 msgstr "Korea (Demokratische Volksrepublik)"
 
 msgid "Korea (Republic of)"
-msgstr "Korea, Republik"
+msgstr "Südkorea"
 
 msgid "Kuwait"
 msgstr "Kuwait"
@@ -5267,13 +5267,13 @@ msgstr "Kirgistan"
 
 #, fuzzy
 msgid "LAN"
-msgstr "LNB"
+msgstr "LAN"
 
 msgid "LAN adapter"
 msgstr "Netzwerkadapter"
 
 msgid "LAN connection"
-msgstr "LAN Verbindung"
+msgstr "LAN-Verbindung"
 
 msgid "LEFT"
 msgstr ""
@@ -5328,7 +5328,7 @@ msgid "Latvian"
 msgstr "Lettisch"
 
 msgid "Leave DVD player?"
-msgstr "DVD Player beenden?"
+msgstr "DVD-Player beenden?"
 
 msgid "Leave this set to 'yes' unless you fully understand why you are adjusting it."
 msgstr "Lassen Sie diese Einstellung auf “Ja”, es sei denn, Sie verstehen vollständig, warum Sie sie anpassen."
@@ -5533,7 +5533,7 @@ msgstr "Madagascar"
 
 #, fuzzy
 msgid "Magenta"
-msgstr "Argentina"
+msgstr "Magenta"
 
 msgid "Main menu"
 msgstr "Hauptmenü"
@@ -5681,7 +5681,7 @@ msgstr "Skin Auswahl Aktionen"
 
 #, fuzzy
 msgid "Menu button function"
-msgstr "Funktion auswählen"
+msgstr "Menü-Tastenfunktion"
 
 #, python-format
 msgid "Menusort (%s)"
@@ -5697,7 +5697,7 @@ msgid "Messages"
 msgstr "Mitteilungen"
 
 msgid "Mexico"
-msgstr "Mexico"
+msgstr "Mexiko"
 
 msgid "Micronesia (Federated States of)"
 msgstr "Micronesia (Federated States of)"
@@ -5743,7 +5743,7 @@ msgid "Modulator"
 msgstr "Modulator"
 
 msgid "Moldova (Republic of)"
-msgstr "Moldawien (Republik)"
+msgstr "Moldawien"
 
 msgid "Mon"
 msgstr "Mo"
@@ -5767,7 +5767,7 @@ msgid "Montserrat"
 msgstr "Montserrat"
 
 msgid "Morocco"
-msgstr "Morocco"
+msgstr "Marokko"
 
 msgid "Mosquito noise reduction"
 msgstr "Mosquito-Rauschreduzierung"
@@ -6126,7 +6126,7 @@ msgid "No active subservices available."
 msgstr "Keine aktiven Subservices verfügbar."
 
 msgid "No age block"
-msgstr "Keine Altersbeschränkung"
+msgstr "Ohne Altersbeschränkung"
 
 #, fuzzy
 msgid "No config items available"
@@ -6478,19 +6478,19 @@ msgid "Open setup tuner "
 msgstr "Öffnen Sie den Setup-Tuner"
 
 msgid "Open the movie list"
-msgstr "Zurück zur Videoliste"
+msgstr "Filmliste öffnen"
 
 msgid "OpenWebif is used for detection on box with this IP address."
 msgstr ""
 
 msgid "Operating LED status in deep standby mode"
-msgstr "Status LED im Deep Standby"
+msgstr "Status der LED im Deep Standby"
 
 msgid "Operating LED status in standby mode"
-msgstr "Status LED im Standy"
+msgstr "Status der LED im Standby"
 
 msgid "Operating LED status while running"
-msgstr "Status LED im Betrieb"
+msgstr "Status der LED im Betrieb"
 
 msgid "Opkg"
 msgstr "Opkg"
@@ -6499,7 +6499,7 @@ msgid "Options disable timer"
 msgstr "Optionen deaktivieren Zeit"
 
 msgid "Orbital position"
-msgstr "Orbitale Position"
+msgstr "Orbitalposition"
 
 msgid "Order by modes"
 msgstr "Nach Modi sortieren"
@@ -6565,7 +6565,7 @@ msgid "PGS file"
 msgstr "PGS Datei"
 
 msgid "PID Filtering"
-msgstr "PID Filterung"
+msgstr "PID-Filterung"
 
 msgid "PIN code needed"
 msgstr "PIN-Code benötigt"
@@ -6643,7 +6643,7 @@ msgid "Palau"
 msgstr "Palau"
 
 msgid "Palestine, State of"
-msgstr "Palestine, State of"
+msgstr "Palästina"
 
 #. TRANSLATORS: (aspect ratio policy: cropped content on left/right) in doubt, keep english term
 msgid "Pan&scan"
@@ -6656,7 +6656,7 @@ msgid "Panic to"
 msgstr "Panik zu"
 
 msgid "Papua New Guinea"
-msgstr "Papua Neu-Guinea"
+msgstr "Papua-Neuguinea"
 
 msgid "Paraguay"
 msgstr "Paraguay"
@@ -6719,7 +6719,7 @@ msgid "Peru"
 msgstr "Peru"
 
 msgid "Philippines"
-msgstr "Philippines"
+msgstr "Philippinen"
 
 msgid "PiP setup"
 msgstr "Bild im Bild (PiP) - Einstellung"
@@ -7028,10 +7028,10 @@ msgstr "Bitte warten… Liste wird geladen…"
 
 # löschen?/delete?
 msgid "Plugin Browser"
-msgstr "Plugin Manager"
+msgstr "Plugin-Manager"
 
 msgid "Plugin browser"
-msgstr "Plugin Manager"
+msgstr "Plugin-Manager"
 
 msgid "Plugin manager activity information"
 msgstr "Pluginverwaltung: geplante Aktionen."
@@ -7043,7 +7043,7 @@ msgid "Plugins"
 msgstr "Plugins"
 
 msgid "Poland"
-msgstr "Poland"
+msgstr "Polen"
 
 msgid "Polarisation"
 msgstr "Polarisation"
@@ -7112,7 +7112,7 @@ msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Energieverwaltung. Weitere Informationen finden Sie in der Bedienungsanleitung Ihres Receivers."
 
 msgid "Power off time"
-msgstr "Ausschatzeit"
+msgstr "Ausschaltzeit"
 
 msgid "Power off timer"
 msgstr "Ausschalt-Timer"
@@ -7316,10 +7316,10 @@ msgid "Progress"
 msgstr "Fortschritt"
 
 msgid "Progress bar left"
-msgstr "Balken links"
+msgstr "Fortschrittsbalken links"
 
 msgid "Progress bar right"
-msgstr "Balken rechts"
+msgstr "Fortschrittsbalken rechts"
 
 msgid "Progress:"
 msgstr "Fortschritt:"
@@ -7334,7 +7334,7 @@ msgid "Protect configuration"
 msgstr "Konfiguration schützen"
 
 msgid "Protect context menus"
-msgstr "Inhaltsbezogene Menü's schützen"
+msgstr "Inhaltsbezogene Menüs schützen"
 
 msgid "Protect main menu"
 msgstr "Hauptmenü schützen"
@@ -7813,7 +7813,7 @@ msgid "Restart your network connection and interfaces.\n"
 msgstr "Neustart der Netzwerk-Konfiguration des Receivers.\n"
 
 msgid "Restore"
-msgstr "Zurückspielen"
+msgstr "Wiederherstellen"
 
 msgid "Restore backups"
 msgstr "Einstellungen wiederherstellen"
@@ -7890,7 +7890,7 @@ msgid "Roll-off"
 msgstr "Roll-off"
 
 msgid "Romania"
-msgstr "Romania"
+msgstr "Rumänien"
 
 msgid "Romanian"
 msgstr "Rumänisch"
@@ -7987,10 +7987,10 @@ msgid "Saint Barthelemy"
 msgstr "Saint-Barthélemy"
 
 msgid "Saint Helena, Ascension and Tristan da Cunha"
-msgstr "Saint Helena, Ascension and Tristan da Cunha"
+msgstr "St. Helena, Ascension und Tristan da Cunha"
 
 msgid "Saint Kitts and Nevis"
-msgstr "Saint Kitts and Nevis"
+msgstr "St. Kitts und Nevis"
 
 msgid "Saint Lucia"
 msgstr "Saint Lucia"
@@ -7999,10 +7999,10 @@ msgid "Saint Martin (French part)"
 msgstr "Saint Martin (Französisch)"
 
 msgid "Saint Pierre and Miquelon"
-msgstr "Saint Pierre and Miquelon"
+msgstr "Saint-Pierre und Miquelon"
 
 msgid "Saint Vincent and the Grenadines"
-msgstr "Saint Vincent and the Grenadines"
+msgstr "St. Vincent und die Grenadinen"
 
 msgid "Same as stream"
 msgstr "Gleich wie Stream"
@@ -8017,7 +8017,7 @@ msgid "San Marino"
 msgstr "San Marino"
 
 msgid "Sao Tome and Principe"
-msgstr "Sao Tome and Principe"
+msgstr "São Tomé und Príncipe"
 
 msgid "Sat"
 msgstr "Sa"
@@ -8232,16 +8232,16 @@ msgid "Seek"
 msgstr "Spulen"
 
 msgid "Seek backward"
-msgstr "Rückwärts spulen"
+msgstr "Zurückspulen"
 
 msgid "Seek backward (enter time)"
 msgstr "Rückwärts springen (Zeit eingeben)"
 
 msgid "Seek forward"
-msgstr "Vorwärts spulen"
+msgstr "Vorspulen"
 
 msgid "Seek forward (enter time)"
-msgstr "Vorwärts spulen (Zeit eingeben)"
+msgstr "Vorspulen (Zeit eingeben)"
 
 msgid "Select"
 msgstr "Auswählen"
@@ -8638,7 +8638,7 @@ msgid "Sequence repeat"
 msgstr "Sequenz-Wiederholung"
 
 msgid "Serbia"
-msgstr "Serbia"
+msgstr "Serbien"
 
 msgid "Serbian"
 msgstr "Serbisch"
@@ -8923,7 +8923,7 @@ msgstr "PiP (Bild in Bild) anzeigen"
 
 #, fuzzy
 msgid "Show Providers"
-msgstr "Filme anzeigen"
+msgstr "Anbieter anzeigen"
 
 #, fuzzy
 msgid "Show Satellites"
@@ -9114,7 +9114,7 @@ msgstr "Senderliste oder Filme anzeigen"
 
 #, fuzzy
 msgid "Show setup default values"
-msgstr "Sendungsdetails anzeigen"
+msgstr "Standardeinstellungen anzeigen"
 
 #, fuzzy
 msgid "Show simple second infobar"
@@ -9426,7 +9426,7 @@ msgstr "Sortiere Liste:"
 
 #, fuzzy
 msgid "Sort order for help screen"
-msgstr "Sortierreihenfolge für Setup-Einträge"
+msgstr "Sortierreihenfolge für Hilfe-Einträge"
 
 msgid "Sort order for menu entries"
 msgstr "Sortiere Reihenfolge der Menü-Einträge"
@@ -9849,8 +9849,8 @@ msgid ""
 "Sundtek - hardware blind scan in progress.\n"
 "Please wait(3-20 min) for the scan to finish."
 msgstr ""
-"Sundtek - Hardware Blind Scan läuft.\n"
-"Bitte warten Sie(3-20 min) bis der Scan beendet ist."
+"Sundtek - Hardware Blindscan läuft.\n"
+"Bitte warten Sie (3-20 min) bis der Scan beendet ist."
 
 msgid "Suriname"
 msgstr "Suriname"
@@ -10166,7 +10166,7 @@ msgid "The number of steps to change the volume on the device the keys are forwa
 msgstr "Die Anzahl der Schritte zum Ändern der Lautstärke auf dem Gerät, an das die Tasten weitergeleitet werden."
 
 msgid "The order and grouping of the help information list can be controlled using MENU>Setup>User Interface>Settings>Sort order for help screen or pressing long help"
-msgstr ""
+msgstr "Die Reihenfolge und Gruppierung der Hilfe-Informationsliste kann über MENÜ>Einstellungen>Benutzeroberfläche>Einstellungen>Sortierreihenfolge für Hilfebildschirm oder durch langes Drücken der Hilfe-Taste gesteuert werden."
 
 msgid ""
 "The overscan wizard has been completed.\n"
@@ -10986,7 +10986,7 @@ msgid "United Arab Emirates"
 msgstr "Vereinigte Arabische Emirate"
 
 msgid "United Kingdom"
-msgstr "United Kingdom"
+msgstr "Vereinigtes Königreich"
 
 msgid "United States"
 msgstr "Vereinigte Staaten"
@@ -11435,7 +11435,7 @@ msgid "Volume"
 msgstr "Lautstärke"
 
 msgid "Volume down"
-msgstr "Lautstärke veringern"
+msgstr "Lautstärke verringern"
 
 msgid "Volume keys on the receiver remote will control the TV volume."
 msgstr "Lautstärke der Fernbedienung steuert auch die Lautstärke des TV"
@@ -11664,13 +11664,13 @@ msgid "When enabled you get the channel selection list via the OK button, the in
 msgstr "Beim Betätigen der OK-Taste wird die Kanalauswahlliste angezeigt und die Anzeige der Infoleiste auf die EXIT-Taste gelegt, wenn diese Einstellung aktiviert ist."
 
 msgid "When enabled, AIT data will be included in http streams. This allows a client receiver to use HbbTV."
-msgstr "Wenn aktiviert, werden AIT Daten in HTTP-Streams eingefügt. Dies ermöglicht Client-Receivern HbbTV zu benutzen."
+msgstr "Wenn aktiviert, werden AIT-Daten in HTTP-Streams eingefügt. Dies ermöglicht Client-Receivern HbbTV zu benutzen."
 
 msgid "When enabled, ECM data will be included in http streams. This allows a client receiver to do the descrambling."
-msgstr "Wenn aktiviert, werden ECM Daten in HTTP-Streams eingefügt. Dies ermöglicht Client-Receivern den Stream selbst zu entschlüsseln."
+msgstr "Wenn aktiviert, werden ECM-Daten in HTTP-Streams eingefügt. Dies ermöglicht Client-Receivern den Stream selbst zu entschlüsseln."
 
 msgid "When enabled, EIT data will be included in http streams. This allows a client receiver to show EPG."
-msgstr "Wenn aktiviert, werden EIT Daten in HTTP-Streams eingefügt. Dies ermöglicht Client-Receivern ein EPG anzuzeigen."
+msgstr "Wenn aktiviert, werden EIT-Daten in HTTP-Streams eingefügt. Dies ermöglicht Client-Receivern ein EPG anzuzeigen."
 
 msgid "When enabled, HDMI-CEC is enabled with standard configuration"
 msgstr "Bei Einstellung 'Ja' wird HDMI-CEC mit Standardeinstellungen aktiviert."
@@ -11854,7 +11854,7 @@ msgid "Window Actions"
 msgstr "Skin Auswahl Aktionen"
 
 msgid "Wireless LAN"
-msgstr "Funk-Netzwerk"
+msgstr "WLAN"
 
 msgid "Wireless network"
 msgstr "Funk-Netzwerk"
@@ -11932,7 +11932,7 @@ msgstr "Gelb"
 
 #, fuzzy
 msgid "Yellow button function"
-msgstr "Funktion auswählen"
+msgstr "Funktion der gelben Taste"
 
 msgid "Yemen"
 msgstr "Jemen"
@@ -12264,7 +12264,7 @@ msgid "active "
 msgstr "Aktiv "
 
 msgid "actual time only"
-msgstr "tatsächliche Zeit nur"
+msgstr "nur tatsächliche Zeit"
 
 msgid "additional cable of rotor"
 msgstr "zusätzliches Kabel für den Motor"
@@ -12291,10 +12291,10 @@ msgid "all tuners"
 msgstr "Alle Tuner"
 
 msgid "alphabetic"
-msgstr "Alphabet"
+msgstr "Alphabetisch"
 
 msgid "alphabetic reverse"
-msgstr "Umgekehrtes Alphabet"
+msgstr "Umgekehrt alphabetisch"
 
 msgid "alphabetical"
 msgstr "alphabetisch"
@@ -12306,10 +12306,10 @@ msgid "always"
 msgstr "immer"
 
 msgid "and never ask in this session again"
-msgstr "und frag nie wieder in dieser Sitzung"
+msgstr "und in dieser Sitzung nicht wieder nachfragen"
 
 msgid "and never ask this again"
-msgstr "und dies nicht erneut nachfragen"
+msgstr "und nicht erneut nachfragen"
 
 msgid "and select next channel"
 msgstr "und nachfolgenden Kanal auswählen"
@@ -12327,7 +12327,7 @@ msgid "arts/culture magazine"
 msgstr "Kunst/Kulturmagazine"
 
 msgid "athletics"
-msgstr "Leichtathletik (Sport)"
+msgstr "Leichtathletik"
 
 msgid "audio tracks"
 msgstr "Tonspuren"
@@ -12370,7 +12370,7 @@ msgid "bottom"
 msgstr "Unten"
 
 msgid "broadcasting/press"
-msgstr "Rundsendung/Presse"
+msgstr "Rundfunk/Presse"
 
 msgid "by date"
 msgstr "Aufnahmen nach Datum sortieren"
@@ -12391,7 +12391,7 @@ msgid "chapters"
 msgstr "Kapitel"
 
 msgid "childrens's youth program (general)"
-msgstr "Kinder/Jugendprogramm (Allgemein)"
+msgstr "Kinder-/Jugendprogramm (Allgemein)"
 
 msgid "circular left"
 msgstr "Links-zirkular"
@@ -12418,10 +12418,10 @@ msgid "convert to AC3"
 msgstr "konvertiere zu AC3"
 
 msgid "convert to DTS"
-msgstr "konvertiere zu  DTS"
+msgstr "konvertiere zu DTS"
 
 msgid "convert to multi-channel PCM"
-msgstr "konvertiere zu Multikanal PCM"
+msgstr "konvertiere zu Multikanal-PCM"
 
 msgid "cooking"
 msgstr "Kochen"
@@ -12439,7 +12439,7 @@ msgid "delete cut"
 msgstr "Schnitt löschen"
 
 msgid "descramble and record ecm"
-msgstr "Entschlüsseln und Aufnahme ECM"
+msgstr "Entschlüsseln und ECM aufnehmen"
 
 msgid "detective/thriller"
 msgstr "Krimi/Thriller"
@@ -12460,13 +12460,13 @@ msgid "discussion/interview/debate"
 msgstr "Diskussion/Interview/Debatte"
 
 msgid "do nothing"
-msgstr "Nichts"
+msgstr "Nichts tun"
 
 msgid "documentary"
-msgstr "Dokumentationen"
+msgstr "Dokumentation"
 
 msgid "don't descramble, record ecm"
-msgstr "Nicht entschlüsseln, Aufnahme ECM"
+msgstr "Nicht entschlüsseln, ECM aufnehmen"
 
 msgid "done!"
 msgstr "Erledigt!"
@@ -12523,11 +12523,11 @@ msgid "exit networkadapter setup menu"
 msgstr "Netzwerkadaptermenü verlassen"
 
 msgid "experimental film/video"
-msgstr "Experimentelle Filme/Video"
+msgstr "Experimentelle Filme/Videos"
 
 #, fuzzy
 msgid "extra high"
-msgstr "extra breit"
+msgstr "extra hoch"
 
 msgid "extra wide"
 msgstr "extra breit"
@@ -12551,7 +12551,7 @@ msgid "film/cinema"
 msgstr "Film/Kino"
 
 msgid "fine arts"
-msgstr "Kunstwissenschaft"
+msgstr "Bildende Kunst"
 
 msgid "fitness and health"
 msgstr "Fitness & Gesundheit"
@@ -12563,7 +12563,7 @@ msgid "flat alphabetic reverse"
 msgstr "Umgekehrtes Alphabet"
 
 msgid "folk/traditional music"
-msgstr "Volks/Traditionelle Musik"
+msgstr "Volks-/Traditionelle Musik"
 
 msgid "football/soccer"
 msgstr "Fußball"
@@ -12575,7 +12575,7 @@ msgid "force enabled"
 msgstr "aktiviert erzwingen"
 
 msgid "foreign countries/expeditions"
-msgstr "Ausland/Expeditionen"
+msgstr "Andere Länder/Expeditionen"
 
 msgid "forward to the next chapter"
 msgstr "Weiter zum nächsten Kapitel"
@@ -12590,7 +12590,7 @@ msgid "further education"
 msgstr "Weiterbildung"
 
 msgid "game show/quiz/contest"
-msgstr "Spielsendung/Quiz/Wettbewerb"
+msgstr "Gameshow/Quiz/Wettbewerb"
 
 msgid "go to deep standby"
 msgstr "In Deep Standby gehen"
@@ -12605,7 +12605,7 @@ msgid "green"
 msgstr "Grün"
 
 msgid "half an hour"
-msgstr ""
+msgstr "eine halbe Stunde"
 
 msgid "handicraft"
 msgstr "Handwerkskunst"
@@ -12632,7 +12632,7 @@ msgid "in plugins only"
 msgstr "nur bei den Plugins"
 
 msgid "information/education/school program"
-msgstr "Information/Bildung/Schulprogramm"
+msgstr "Information/Bildung/Schule"
 
 msgid "init module"
 msgstr "Modul initialisieren"
@@ -12695,13 +12695,13 @@ msgid "list style single line"
 msgstr "Einzeilige Listenansicht"
 
 msgid "listens to hotplug events"
-msgstr "Auf Hot-Plug Events lauschen"
+msgstr "hört auf Hotplug-Ereignisse"
 
 msgid "literature"
 msgstr "Literatur"
 
 msgid "local sports"
-msgstr "Sport (Allgemein)"
+msgstr "Lokalsport"
 
 msgid "locked"
 msgstr "gesperrt"
@@ -12710,7 +12710,7 @@ msgid "long"
 msgstr "lang"
 
 msgid "magazines/reports/documentary"
-msgstr "Magazine/Reportagen/Dokumentationen"
+msgstr "Magazin/Reportage/Dokumentation"
 
 msgid "manual"
 msgstr "Manuell"
@@ -12780,7 +12780,7 @@ msgid "new media"
 msgstr "Neue Medien"
 
 msgid "news magazine"
-msgstr "Nachrichtensendung"
+msgstr "Nachrichtenmagazin"
 
 msgid "news/current affairs (general)"
 msgstr "Nachrichten/Tagesgeschehen (Allgemein)"
@@ -12795,7 +12795,7 @@ msgid "no CAId selected"
 msgstr "Keine CAID ausgewählt"
 
 msgid "no CI slots found"
-msgstr "Kein CI Slot gefunden"
+msgstr "Kein CI-Slot gefunden"
 
 msgid "no channel list"
 msgstr "keine Kanalliste"
@@ -12822,7 +12822,7 @@ msgid "not locked"
 msgstr "Kein Signal"
 
 msgid "not running"
-msgstr "nicht laufen"
+msgstr "läuft nicht"
 
 msgid "not set"
 msgstr "nicht eingestellt"
@@ -12855,10 +12855,10 @@ msgid "off"
 msgstr "Aus"
 
 msgid "off or wpa2 on"
-msgstr "aus oder wpa2 an"
+msgstr "aus oder WPA2 an"
 
 msgid "offset is"
-msgstr "Endstellung auf"
+msgstr "Versatz auf"
 
 msgid "omit"
 msgstr "omit"
@@ -12897,14 +12897,14 @@ msgid "please wait, loading picture..."
 msgstr "Bitte warten, Bild wird geladen…"
 
 msgid "popular culture/traditional arts"
-msgstr "Beliebte Kultur/Traditionelle Kunst"
+msgstr "Popkultur/Traditionelle Kunst"
 
 #, fuzzy
 msgid "port"
 msgstr "Sport"
 
 msgid "pre-school children's program"
-msgstr "Vorschul Kinderprogramm"
+msgstr "Vorschulprogramm"
 
 msgid "preserve bookmarks in cuts"
 msgstr "Schnitt Lesezeichen anlegen"
@@ -12913,7 +12913,7 @@ msgid "priority"
 msgstr "Priorität"
 
 msgid "receiver software because updates are available."
-msgstr "Receiver Software, weil Updates verfügbar sind."
+msgstr "Receiversoftware, weil Updates verfügbar sind."
 
 msgid "record"
 msgstr "Aufnehmen"
@@ -12925,7 +12925,7 @@ msgid "red"
 msgstr "Rot"
 
 msgid "religion"
-msgstr "Glaube"
+msgstr "Religion"
 
 msgid "remarkable people"
 msgstr "Außergewöhnliche Menschen"
@@ -12967,19 +12967,19 @@ msgid "romance"
 msgstr "Romanze"
 
 msgid "rotor"
-msgstr "Motor"
+msgstr "Rotor"
 
 msgid "rotor is not used"
 msgstr "Roter ist nicht aktiv"
 
 msgid "running"
-msgstr "Laufen"
+msgstr "läuft"
 
 msgid "scan state"
 msgstr "Status"
 
 msgid "science fiction/fantasy/horror"
-msgstr "Science-Fiction/Fantasie/Horror"
+msgstr "Science-Fiction/Fantasy/Horror"
 
 msgid "select CAId's"
 msgstr "CAIDs auswählen"
@@ -12991,13 +12991,13 @@ msgid "serious music/classic music"
 msgstr "Ernste Musik/Klassische Musik"
 
 msgid "serious/classical/religious/historical drama"
-msgstr "Ernst/Klassisch/Religiös/Historischer Film/Drama"
+msgstr "Ernstes/Klassisches/Religiöses/Historisches Filmdrama"
 
 msgid "service off-air"
-msgstr "Service außerhalb der Luft"
+msgstr "Service außerhalb sendet nicht"
 
 msgid "show DVD main menu"
-msgstr "Das DVD Hauptmenü anzeigen"
+msgstr "DVD-Hauptmenü anzeigen"
 
 msgid "show all tags"
 msgstr "Alle Tags anzeigen"
@@ -13012,7 +13012,7 @@ msgid "show softwaremanager on blue button"
 msgstr "Softwaremanager auf blauer Taste anzeigen"
 
 msgid "show/game show (general)"
-msgstr "Show/Spielsendung (Allgemein)"
+msgstr "Show/Gameshow (Allgemein)"
 
 msgid "shuffle"
 msgstr "Mischen"
@@ -13024,10 +13024,10 @@ msgid "simple"
 msgstr "Einfach"
 
 msgid "skip backward"
-msgstr "Rückwärts spulen"
+msgstr "Zurückspulen"
 
 msgid "skip forward"
-msgstr "Vorwärts spulen"
+msgstr "Vorspulen"
 
 #, python-format
 msgid "slot%s - %s"
